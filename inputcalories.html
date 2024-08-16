@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data</title>
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #5776f9;
+            padding: 15px;
+        }
+      
+        
+        form {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }       
+            label, input, button 
+            {
+            margin-bottom: 16px;
+            font-size: 23px;
+                                   
+            }
+            label 
+            {
+            font-weight: bold;
+            color: #fff;
+            }
+        button {
+            width: 324px;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            padding: 20px 40px;
+            font-size: 20px;
+            background-color: #3a44be;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+            button:hover 
+            {
+            background-color: #a2a8f3
+            }
+      input[type="text"] {
+        width: 300px;
+        height: 20px;
+        padding: 10px;
+        font-size:16px;
+        border-radius:5px;
+        border: 2px solid #3a44be;
+        
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      .column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+        h1 {
+            margin-bottom: 35px;
+            color: #fff;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Input the data!</h1>
+    <form method="POST">
+      <div class="container">
+      <div class="column">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+      <label for="sex">Sex</label>
+      <input type="text" name="sex" id="sex" required>      
+      <label for="age">Age</label>
+      <input type="text" name="age" id="age" required>
+        </div>
+        <div class="column">
+      <label for="weight">Weight</label>
+      <input type="text" name="weight" id="weight" required>
+      <label for="height">Height</label>
+      <input type="text" name="height" id="height" required>
+      <label for="Temperature">Temperature</label>
+      <input type="text" name="temperature" id="temperature" required>
+        </div>
+      </div>
+    
+      <button type="submit">Submit</button>
+      {% if result %}<h2 style="color: white;">Calculated Calories per day: {{ result }}</h2>{% endif %}
+    </form>
+  </body>
+</html>

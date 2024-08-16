@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatmates Bill Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #5776f9;
+            padding: 15px;
+        }
+     
+
+        button {
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding: 20px 40px;
+            font-size: 20px;
+            background-color: #3a44be;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a2a8f3;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height= 100vh;
+            padding= 20px;
+          
+        }
+       
+        .text-section {
+            background-color: #3a44be;
+            color: #fff;
+            padding:20px;
+            border-radius:10px;
+            max-width: 900px;
+            text-align: left;
+            font-size: 19px;
+      }
+      
+        p {
+            line-height: 1.4; font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        h1 {
+            margin-bottom: 35px;
+            color: #fff;
+        }
+        
+        img {
+            max-width:100%;
+            height: auto;
+            margin-top: 12px;
+        }
+        
+        .bold-text {
+            font-weight: bold;
+        }
+        
+        .space_paragraph {
+            margin-top: 26px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Count your Calories need per day!</h1>
+  <div class = "container">
+    <section class="text-section">
+      <p>Welcome to the Calories Calculator! This application helps you accurately determine the amount of calories you need each day based on your
+  age, weight, and other personal factors.</p>
+      <p>Let's get started!</p>
+    </section>
+  </div>
+      <button onclick="location.href='/input'">Go to Input Page</button>
+  <div class = "container">
+   <p class="space_paragraph" style="font-size:14px"><span class="bold-text">&nbspPlease ensure that all details are correct before submitting!&nbsp</span></p>  
+   </div>
+</body>
+</html>
